@@ -1,0 +1,161 @@
+<!DOCTYPE HTML> <!-- indique au navigateur d'interpréter le html5 -->
+<html>
+ 
+	<head> <!-- regroupe toutes les méta-informations, c'est-à-dire les données qui ne sont pas représentées directement à l'écran dans le rendu du document -->
+			<meta charset="utf-8"/> 	<!-- utf-8 est un codage de caractères informatiques conçu pour coder l'ensemble des caractères du « répertoire universel de caractères codés -->
+			<title> Région </title>	    <!-- titre visible dans l'onglet--> 
+			<link href="style.css" rel="stylesheet" type="text/css"/>	<!-- lien avec la feuille de style -->
+	</head>
+	
+
+
+	<body> <!--  Partie visible dans un navigateur -->
+	
+	
+		<div class="Page"> <!--  div est un conteneur générique qui permet d'organiser le contenu  -->
+		
+			<header> <!-- entête de la page -->
+				<img src="logo.png"/> <!-- image -->
+				<h1> La Région Auvergne-Rhône-Alpes 
+               <em class="bleu"> Site réalisé par : Ivana MORENO </em>
+                </h1><!-- titre h1-->
+				<img src="carte.jpg"/><!-- image -->
+			</header>
+			<div class="introduction">		
+					<h2> Listes des départements de la région Auvergne-Rhône-Alpes </h2>
+                
+					<p> Auvergne Rhône-Alpes est une région <em>française</em> qui regroupe douze départements: l'Ain, l'Allier, l'Ardèche, le Cantal, la Drôme, la Haute-Loire, la Haute-Savoie, l'Isère, la Loire, le Puy de Dôme, le Rhône, la Savoie. 
+					 Son chef-lieu est <em class="vert">Lyon</em>. </p>
+			</div>	
+			<section> <!-- section de la page -->
+				<nav> <!-- nav est le conteneur pour le menu -->
+					<h2>Départements</h2>
+					<ol> <!-- liste numérotée -->
+						<li><a href="Ain.html">  Ain </a></li>  <!-- lien hypertexte -->
+							<ul><!-- liste à puce -->
+								<li> Ambérieu en Bugey </li><!-- élément de la liste à puce-->
+								<li> Saint Nizier le Désert </li>
+								<li> Ars sur Formans </li>
+							</ul> <!-- fin de la première liste à puce -->
+						<li> Allier </li><!-- élément de la liste numérotée-->
+						<li> Ardèche </li>
+						<li> Cantal </li>
+						<li> Drôme </li>
+						<li> Haute-Loire </li>
+						<li> Haute-Savoie</li>
+						<li> Isère </li>
+							<ul> 
+								<li> Grenoble </li>
+								<li> Vienne </li>
+							</ul>
+						<li> Loire </li> 
+							<ul> 
+								<li> Roanne </li>
+								<li> Saint-Etienne </li>
+							</ul>
+						<li class="lyon"><a href="gironde.html">  Gironde </a></li>
+							<ul> 
+								<li> Bordeaux </li>
+								<li> Mérignac </li>
+								<li> Pessac </li>
+							</ul>
+						
+					</ol> <!-- fin de la liste numérotée-->
+				</nav> <!-- fin de nav --> 
+	
+				<form name="NomDuFormulaire" method="post" action=""> <!-- formulaire 
+						L'attribut action définit l'emplacement (une URL) où doivent être envoyées les données collectées par le formulaire.
+						L'attribut method définit la méthode HTTP utilisée pour envoyer les données (cela peut être « get » ou « post »).-->
+				    <h2>Formulaire de demande de renseignements </h2>
+					<p>
+						<label for="name">Nom :</label>
+						<input type="text" id="name" name="user_name">
+					</p>
+					<p>
+						<label for="prenom">prénom</label>
+						<input type="text" id="prenom" name="user_prenom">
+					</p>
+					<p>
+						<label for="msg">Message :</label>
+						<textarea id="msg" name="user_message"></textarea>
+					</p>
+					<p>
+						<input type="submit" name="button" id="button" 
+						value="Envoyer">
+					</p>	
+				</form><!-- fin de formulaire -->
+	
+
+	
+	
+	
+				<table border="1px""> <!-- tableau-->
+					<caption><h2>Nombre d'habitants par collectivité territoriale</h2></caption><!-- titre du tableau-->
+					
+					 
+					<tr height="30px"> <!-- 1ère ligne du tableau -->
+						<th>Département</th>
+						<th>Nombre d'habitants</th>
+					</tr><!-- fin de la première ligne -->
+					<tr>
+						<td>Ain </td> <!-- 1ère cellule de la ligne-->
+						<td>612 191</td><!-- 2ème cellule de la ligne --> 
+					</tr>
+					<tr><!-- 2ème ligne du tableau -->
+						<td>Allier</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Ardèche</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Cantal</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Drôme</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Haute-Loire</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Haute-Savoie</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td> Isère </td>
+						<td></td>
+					</tr>
+					<tr>
+						<td> Loire </td>
+						<td></td>
+					</tr>
+					<tr>
+						<td> Métropole de Lyon </td>
+						<td></td>
+					</tr>
+					<tr>
+						<td> Puy de Dôme </td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>  Rhône  </td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>  Savoie  </td>
+						<td></td>
+					</tr>				
+					
+				</table> <!-- fin du tableau -->
+			</section> <!-- fin de la section" -->
+			<footer> <!-- pied de page-->
+				<p class="PiedPage">Carte de France | Région | Département | Ville | Partenaires | Mentions légales | Contact </p>
+			</footer><!-- fin du pied de page-->
+			
+		</div> <!-- fin de la div page -->
+	</body> <!-- fin du body -->
+</html> <!-- fin html -->
